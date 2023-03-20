@@ -1,0 +1,11 @@
+{
+  "$schema": "https://aka.ms/azure/static-web-apps-cli/schema",
+  "configurations": {
+    "swa-from-scratch": {
+      "appLocation": "app",
+      "apiLocation": "api",
+      "outputLocation": ".",
+      "apiBuildCommand": "dotnet publish -c Release"
+    }
+  }
+}
