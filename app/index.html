@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Hello World</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>The fun message is:</h1>
+    </header>
+    <div id="message">
+        the api response should be here
+    </div>
+</body>
+
+<script>
+    fetch('api/HelloWorld')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('message').innerHTML = data;
+        });
+</script>
