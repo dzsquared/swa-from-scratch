@@ -1,5 +1,6 @@
 # swa-from-scratch
 
+## walkthrough
 select devcontainer for azure functions .net 6 (in-process)
 add nodejs (select option for 18)
 
@@ -14,3 +15,14 @@ func new --template HttpTrigger --name HelloWorld
 *if you hit issues with AzureWebJobsStorage, check out Azurite*
 
 to get rid of red squigglies, run dotnet restore in api folder
+
+
+
+to run swa locally:
+swa start -a app -i api
+
+
+## resources
+
+sample repositories:
+- https://github.com/Azure-Samples/azure-sql-db-todo-backend-dotnet
